@@ -2,6 +2,8 @@ import "./App.css";
 import Logo from "../Logo/Logo.jsx";
 import BestPokemon from "../BestPokemon/BestPokemon.jsx";
 import CaughtPokemon from "../CaughtPokemon/CaughtPokemon.jsx";
+import PokemonMovesSelector from "../PokemonMovesSelector/PokemonMovesSelector.jsx";
+import PokemonCity from "../PokemonCity/PokemonCity.jsx";
 
 function App() {
   const appName = "Fikret's Pokedex";
@@ -17,6 +19,8 @@ function App() {
       <Logo appName={appName} logWhenClicked={logWhenClicked} />
       <BestPokemon abilities={abilities} />
       <CaughtPokemon date={date} />
+      <PokemonMovesSelector />
+      <PokemonCity />
     </div>
   );
 }
