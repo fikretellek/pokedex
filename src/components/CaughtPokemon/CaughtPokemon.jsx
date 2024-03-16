@@ -20,7 +20,7 @@ export default function CaughtPokemon({ date }) {
   }
 
   return (
-    <>
+    <div>
       <input type="text" value={pokemonInputName} name="" id="" onChange={handleInputChange} />
       <button onClick={catchPokemon}>Catch</button>
       <p>
@@ -31,6 +31,6 @@ export default function CaughtPokemon({ date }) {
           return <li key={crypto.randomUUID()}>{pokemon}</li>;
         })}
       </ul>
-    </>
+    </div>
   );
 }
